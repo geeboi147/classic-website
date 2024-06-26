@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<head>
+<title>
+classic systems
+</title>
+
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet"href="css/font-awesome.min.css">
+</head>
+<body>
+<header>
+<div class="logo">
+<h1>
+CLASSIC <br>SYSTEMS
+</h1>
+</div>
+<nav id="nav">
+
+
+<div class="pages">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="register">
+<a href="login.html">Login</a>
+<a href="signup.html">Signup</a>
+</div>
+</nav>
+<div class="brt" onclick="myFunction()">
+<i class="fa fa-bars"></i>
+</div>
+</header>
+
+<div class="about-content">
+<div class="mission-statement">
+<h2>Our Mission</h2>
+<h3>To deliver innovative and reliable technology solutions, ensuring client satisfaction, staying at the forefront of industry advancements, and fostering a dynamic and collaborative work environment</h3>
+</div>
+
+
+<div class="vision-statement">
+<h2>Our Vision</h2>
+<h3>Becoming a global leader in cutting-edge technology, driving positive societall impact through digital solutions, and consistently exceeding client expectations while maintaining a commitment to sustainability and ethical practices.</h3>
+<img src="vision.jpg">
+</div>
+
+<div class="growth-statement-container">
+<div class="growth-statement">
+<div class="wordz">
+<h2>Our Growth</h2>
+
+<h3>Over the years, we have sustained growth through continous innovation, staying abreast of emerging technologies, expanding service offerings and cultivating a skilled workforce. We fostered a client-centric approach, adapted to market dynamics and leverage strategic collaborations by partnering with other tech giants and those in the educational sector to position our company as a key player in the ever evolving IT landscape.</h3>
+</div>
+<img src="growth.jpg">
+</div>
+
+</div>
+<center>
+<h2>Our Partners</h2>
+</center>
+<div class="logos">
+<div class="logos-slide">
+
+<img src="futa.jpeg" width="200"/>
+<img src="apple.png" width="200"/>
+<img src="hp.png" width="200"/>
+<img src="microsoft.png" width="200"/>
+<img src="infinix.png" width="200"/>
+<img src="cpn.jpeg" width="200"/>
+<img src="nitda.jpeg" width="200"/>
+<img src="tecno.png" width="200"/>
+</div>
+
+</div>
+</div>
+
+<footer>
+<div class="foot">
+<p> &copy; Copyright 2023 Mobilise - All Rights Reserved</p>
+<p>website developed and designed by <span>GOGGLE BOY</span></p>
+</div>
+</footer>
+<script>
+var copy = document.querySelector(".logos-slide").cloneNode(true);
+document.querySelector(".logos").appendChild(copy);
+</script>
+<script src="function.js"></script>
+<script>
+function myFunction(){
+var navbar=document.getElementById('nav');
+navbar.classList.toggle('show');	
+}
+
+</script>
+</body>
+</html>

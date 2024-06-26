@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<head>
+<title>
+classic systems
+</title>
+
+<link rel="stylesheet" href="style.css">
+ <link rel="stylesheet"href="css/font-awesome.min.css">
+</head>
+<body>
+<header>
+
+<div class="logo">
+<h1>
+CLASSIC <br>SYSTEMS
+</h1>
+</div>
+<nav id="nav">
+
+
+<div class="pages">
+<a href="index.html">Home</a>
+<a href="about.html">About Us</a>
+<a href="services.html">Our Services</a>
+<a href="contact.html">Contact</a>
+</div>
+
+<div class="register">
+<a href="login.html">Login</a>
+<a href="signup.html">Signup</a>
+</div>
+</nav>
+<div class="brt" onclick="myFunction();">
+<i class="fa fa-bars"></i>
+</div>
+
+</header>
+
+<div class="services-content">
+
+
+<div class="container desktop">
+<div class="title">
+<h1>
+Our Service
+</h1>
+</div>
+<section class="tasks">
+<div class="tasks-grp-1">
+<div class="task-desc-title">
+<img class="rd" src="ict.jpg" width="250" alt="my picture">
+<div class="one">ICT Training Service
+<p>more</p></div>
+
+</div>
+<div class="task-desc-title">
+<img class="blu" src="consultancy.jpg" width="250" alt="my picture">
+<div class="two">Consultancy Service
+<p>more</p></div>
+
+</div>
+</div>
+
+<p class="desc one-desc-title">
+ICT training services offered by our organization empower professionals with cutting edge skills, ensuring they adeptly navigate the dynamic landscape of Information and Communication Technology
+</p>
+<p class="desc two-desc-title">
+Our consultancy services are a strategic compass for businesses navigating the complexities of technology, with a focus on innovation and efficiency, we provide tailored solutions that align with organizational goals. 
+</p>
+
+<div class="tasks-grp-2">
+<div class="task-desc-title">
+<img class="rd" src="gadgets.jpg" width="250" alt="my picture">
+<div class="three">Sales Of Gadget
+<p>more</p></div>
+</div>
+<div class="task-desc-title">
+<img class="blu" src="repair.jpg" width="250" alt="my picture">
+<div class="four">Repair Of Gadget
+<p>more</p></div>
+</div>
+</div>
+
+<p class="desc three-desc-title">
+Explore a range of innovative devices designed to elevate your digital experience.enjoy hassle free shopping with secure transactions and prompt deliveries.
+Join us in the world of tech excellence, where quality meets convenience. 
+</p>
+<p class="desc four-desc-title">
+Revive your gadgets with our expert repair services. from smartphones to laptops, our skilled technicians specialize in restoring functionality. fast, reliable, and cost-effective solutions to breathe new life into your devices, Trust uds for efficient gadget repairs, your one stop destination for quality services and swift turnaround times.
+</p>
+</section>
+</div>
+<div class="container mobile" id="container-mobile">
+<div class="title">
+<h1>
+Our Service
+</h1>
+
+</div>
+<section class="tasks">
+<div class="task-desc">
+<div class="task-desc-title">
+<img class="rd" src="integrity.jpg" width="400"  height="500"alt="my picture">
+<div class="one">ICT Training Service
+<p>more</p></div>
+
+</div>
+<p class="desc one-desc-title">
+ICT training services offered by our organization empower professionals with cutting edge skills, ensuring they adeptly navigate the dynamic landscape of Information and Communication Technology
+</p>
+</div>
+<div class="task-desc">
+<div class="task-desc-title">
+<img class="blu" src="integrity.jpg" width="400" alt="my picture">
+<div class="two">Consultancy Service
+<p>more</p></div>
+</div>
+<p class="desc two-desc-title">
+Our consultancy services are a strategic compass for businesses navigating the complexities of technology, with a focus on innovation and efficiency, we provide tailored solutions that align with organizational goals.
+</p>
+</div>
+
+<div class="task-desc">
+<div class="task-desc-title">
+<img class="rd" src="integrity.jpg" width="200" alt="my picture">
+<div class="three">Sales Of Gadget
+<p>more</p></div>
+</div>
+<p class="desc three-desc-title">
+lorem ipsum dolor sit amet,consecutureadipscing.in volupatielit esumond convalis liguladicyu
+</p>
+</div>
+
+<div class="task-desc">
+<div class="task-desc-title">
+<img class="blu" src="integrity.jpg" width="200" alt="my picture">
+<div class="four">Repair Of Gadget
+<p>more</p></div>
+</div>
+<p class="desc four-desc-title">
+lorem ipsum dolor sit amet,consecutureadipscing.in volupatielit esumond convalis liguladicyu
+</p>
+</div>
+</section>
+</div>
+
+</div>
+
+
+
+
+
+
+
+
+<footer>
+<center>
+<p> &copy; Copyright 2023 Mobilise - All Rights Reserved</p>
+<p>website developed and designed by <span>GOGGLE BOY</span></p>
+</center>
+</footer>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js'></script>
+<script src="function.js"></script>
+<script>
+$(document).ready(function(){
+$('.desc').hide();
+
+
+var numberOfDesc = $('.task-desc-title').length;
+
+
+var i = 0;
+
+while(i <= numberOfDesc){
+	function tasks(i) {
+		$('.task-desc-title').eq(i).click(function () {
+			$('.desc').slideUp();
+			
+			if($('.desc').eq(i).is(':hidden')){
+				$('.desc').eq(i).slideDown("slow");
+			} else {
+				$('.desc').eq(i).slideUp();
+				
+			}
+		});
+	}
+	tasks(i);
+	i++;
+}
+});
+</script>
+<script>
+function myFunction(){
+var navbar=document.getElementById('nav');
+navbar.classList.toggle('show');	
+}
+
+</script>
+</body>
+</html>
